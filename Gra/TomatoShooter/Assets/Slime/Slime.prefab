@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 4933360652326630707}
   - component: {fileID: 4933360652326630708}
   - component: {fileID: 4933360652326630710}
+  - component: {fileID: 1342607973908436054}
   m_Layer: 0
   m_Name: Slime
   m_TagString: enemy
@@ -117,6 +118,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e551565306510044f8d32cd323507a21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  boss1: {fileID: 310051578519001802, guid: 7fd0ea3931b78b645849b18a0a05b08e, type: 3}
 --- !u!50 &4933360652326630707
 Rigidbody2D:
   serializedVersion: 4
@@ -212,3 +214,19 @@ MonoBehaviour:
   attackDamage: 0
   fireRate: 0
   critic: 0
+--- !u!70 &1342607973908436054
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4933360652326630718}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.002354181, y: -0.016819777}
+  m_Size: {x: 0.07367088, y: 0.030762974}
+  m_Direction: 1

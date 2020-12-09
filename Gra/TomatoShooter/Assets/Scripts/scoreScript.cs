@@ -8,6 +8,8 @@ public class scoreScript : MonoBehaviour
     public static int scoreValue = 0;
     Text score;
     public static int Adder = 1;
+    public static int AdderBoss = 10;
+
 
     // Start is called before the first frame update
     void Start()
@@ -18,6 +20,7 @@ public class scoreScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         score.text = "Score: " + scoreValue;
     }
     

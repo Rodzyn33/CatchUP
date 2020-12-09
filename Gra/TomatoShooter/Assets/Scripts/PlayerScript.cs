@@ -41,7 +41,6 @@ public class PlayerScript : MonoBehaviour
 
     void ProcessInputs()
     {
-
         float moveX = Input.GetAxisRaw("Horizontal");
         float moveY = Input.GetAxisRaw("Vertical");
         float ShootH = Input.GetAxisRaw("ShootingHor");
@@ -75,10 +74,7 @@ public class PlayerScript : MonoBehaviour
         {
             Flip();
         }
-      
-
     }
-
     void Shoot(float x, float y)
     {
         GameObject bullet = Instantiate(bulletPrefab, transform.position, transform.rotation) as GameObject;
@@ -108,14 +104,28 @@ public class PlayerScript : MonoBehaviour
 
 
         }
+        if (col.gameObject.tag.Equals("boss"))
+        {
+            GetComponent<hpScript>().health -= 1;
+
+        }
+        if (col.gameObject.tag.Equals("bossBullet"))
+        {
+            GetComponent<hpScript>().health -= 1;
+            Destroy(col.gameObject);
+        }
         if (col.gameObject.tag.Equals("hpTag") && GetComponent<hpScript>().health < GetComponent<hpScript>().numOfHearts)
         {
             Destroy(col.gameObject);
             GetComponent<hpScript>().health += 1;
         }
-    }
-    
-     
+        if (col.gameObject.tag.Equals("hpboost"))
+        {
+            GetComponent<hpScript>().health += 1;
+            GetComponent<hpScript>().numOfHearts +=1;
+            Destroy(col.gameObject);
+        }
+    }  
     }
 
     

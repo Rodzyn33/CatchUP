@@ -10,11 +10,11 @@ public class itemsSpawner : MonoBehaviour
     float randX;
     Vector2 whereToSpawn;
     public float spawnRate = 2f;
-    float nextSpawn = 0.0f;
+    float nextSpawn = 3.2f;
     // Start is called before the first frame update
     void Start()
     {
-        Instantiate(HP, whereToSpawn, Quaternion.identity);
+       
     }
 
     // Update is called once per frame
@@ -23,7 +23,7 @@ public class itemsSpawner : MonoBehaviour
         if (Time.time > nextSpawn)
         {
             nextSpawn = Time.time + spawnRate;
-            randX = Random.Range(3.2f, -6.85f);
+            randX = Random.Range(3.2f, 3.2f);
             whereToSpawn = new Vector2(randX, transform.position.y);
             Instantiate(HP, whereToSpawn, Quaternion.identity);
         }

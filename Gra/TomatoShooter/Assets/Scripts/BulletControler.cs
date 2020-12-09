@@ -16,11 +16,6 @@ public class BulletControler : MonoBehaviour
     {
         
     }
-
-    
-
-
-
     IEnumerator DeathDelay()
     {
         yield return new WaitForSeconds(lifeTime);

@@ -11,7 +11,6 @@ public class hpScript : MonoBehaviour
     public Animator animator;
     public float waitSec;
 
-
     public Image[] hearts;
     public Sprite fullHeart;
     public Sprite emptyHeart;
@@ -47,27 +46,18 @@ public class hpScript : MonoBehaviour
                 hearts[i].enabled = false;
             }
         }
+
         if (health <= 0)
         {
             StartCoroutine(MenuSec());
-
-
         }
-       
-
-
     }
     IEnumerator MenuSec()
-    {
-
-        Debug.Log("DEAD");
+    { 
         animator.SetBool("dead", true);
         yield return new WaitForSeconds(waitSec);
-
         DeathUI.gameObject.SetActive(true);
         Destroy(gameObject, 10f);
-
-
-
+        Debug.Log("DEAD");
     }
 }
