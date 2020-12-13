@@ -419,6 +419,9 @@ GameObject:
   - component: {fileID: 152056295}
   - component: {fileID: 152056294}
   - component: {fileID: 152056296}
+  - component: {fileID: 152056298}
+  - component: {fileID: 152056297}
+  - component: {fileID: 152056299}
   m_Layer: 0
   m_Name: door_fullyopen
   m_TagString: Untagged
@@ -465,7 +468,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: d67b7d54fbda50247aa1354bfd890892, type: 3}
+  m_Sprite: {fileID: 21300000, guid: bdb7a2ab7c619ec4f858f05e787b3d91, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -503,6 +506,64 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   staticPostion: 0
+--- !u!114 &152056297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 152056293}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21c2a1454b442384fab9c673f12b7fd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  doorOpen: 0
+--- !u!61 &152056298
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 152056293}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.10073688}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.32, y: 0.32}
+    newSize: {x: 0.32, y: 0.32}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.32, y: 0.10378434}
+  m_EdgeRadius: 0
+--- !u!95 &152056299
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 152056293}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: cf29a6a6612f1c04d9551cc421732118, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &201067593
 GameObject:
   m_ObjectHideFlags: 0
@@ -1942,7 +2003,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &797060249
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4262,7 +4323,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3b21b260b224d484283d3388ec911ffe, type: 3}
+  m_Sprite: {fileID: 21300000, guid: af4fa11c79addd0458d4f80e07d32472, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
