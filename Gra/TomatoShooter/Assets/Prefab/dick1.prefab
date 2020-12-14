@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 465665316086324099}
   - component: {fileID: 465665316086324098}
   - component: {fileID: 465665316086324097}
+  - component: {fileID: -8230542318789503540}
   m_Layer: 0
   m_Name: dick1
   m_TagString: Untagged
@@ -196,3 +197,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11d4244c0a0ad714098877e394529fb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-8230542318789503540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 465665316086324101}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9fd22a2c2c18164a9381a0a4a743f06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 0
+  movementSpeed: 0
+  attackDamage: 0
+  fireRate: 0
+  critic: 0

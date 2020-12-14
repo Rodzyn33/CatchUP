@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 4933360652326630707}
   - component: {fileID: 4933360652326630708}
   - component: {fileID: 4933360652326630710}
-  - component: {fileID: 1342607973908436054}
+  - component: {fileID: -4869489543554979240}
   m_Layer: 0
   m_Name: Slime
   m_TagString: enemy
@@ -209,24 +209,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9fd22a2c2c18164a9381a0a4a743f06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 1
+  health: 10
   movementSpeed: 2
   attackDamage: 0
   fireRate: 0
   critic: 0
---- !u!70 &1342607973908436054
-CapsuleCollider2D:
+--- !u!114 &-4869489543554979240
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4933360652326630718}
   m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.002354181, y: -0.016819777}
-  m_Size: {x: 0.07367088, y: 0.030762974}
-  m_Direction: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4745de029af16704d9494fadf70d9141, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  staticPostion: 0
