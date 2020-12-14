@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2145212328557157124}
   - component: {fileID: 2145212328557157121}
   - component: {fileID: 2145212328557157122}
-  - component: {fileID: 2145212328557157123}
+  - component: {fileID: 660033968899653534}
   m_Layer: 0
   m_Name: barrel (1)
   m_TagString: Untagged
@@ -96,8 +96,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   staticPostion: 1
---- !u!61 &2145212328557157123
-BoxCollider2D:
+--- !u!60 &660033968899653534
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -109,7 +109,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0050084963, y: -0.027495623}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -119,6 +119,13 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.10944329, y: 0.05722691}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.056053817, y: -0.031260334}
+      - {x: -0.033615712, y: -0.048491873}
+      - {x: 0.025041334, y: -0.04723154}
+      - {x: 0.043533158, y: -0.027148925}
+      - {x: 0.043533154, y: 0.010764696}
+      - {x: 0.041095156, y: 0.014463082}
+      - {x: -0.043698385, y: 0.015723355}
+      - {x: -0.0573141, y: 0.015971147}
