@@ -19,6 +19,10 @@ public class slimeScript : MonoBehaviour
         hp = gameObject.GetComponent<Statistics>().health;
         ad = gameObject.GetComponent<Statistics>().attackDamage;
     }
+    private void Awake()
+    {
+ 
+    }
 
     // Update is called once per frame
     void Update()
@@ -61,22 +65,7 @@ public class slimeScript : MonoBehaviour
         }
     }
 
-    void OnTriggerEnter2D(Collider2D col)
-    {
-        if (col.gameObject.tag.Equals("bullet"))
-        {
-            Destroy(col.gameObject);
-            Destroy(gameObject);
-            scoreScript.scoreValue += scoreScript.Adder;
-
-            if (scoreScript.scoreValue == 20)
-            {
-                whereToSpawnBoss = new Vector2(15.84f, 0.62f);
-                Instantiate(boss1, whereToSpawnBoss, Quaternion.identity);
-                Debug.Log("Boss Spawned");
-            }
-        }
-    }
+  
     void Flip()
     {
         obrot = !obrot;
