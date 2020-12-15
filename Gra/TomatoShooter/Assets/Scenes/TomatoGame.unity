@@ -323,8 +323,38 @@ PrefabInstance:
     - target: {fileID: 3221460102720397174, guid: 5b6d8fb158aba8c42b4b6fd88039bfc5,
         type: 3}
       propertyPath: fireDelay
-      value: 0.2
+      value: 0.4
       objectReference: {fileID: 0}
+    - target: {fileID: 6002115078676302262, guid: 5b6d8fb158aba8c42b4b6fd88039bfc5,
+        type: 3}
+      propertyPath: DeathUI
+      value: 
+      objectReference: {fileID: 1847238606}
+    - target: {fileID: 6002115078676302262, guid: 5b6d8fb158aba8c42b4b6fd88039bfc5,
+        type: 3}
+      propertyPath: hearts.Array.data[0]
+      value: 
+      objectReference: {fileID: 974571115}
+    - target: {fileID: 6002115078676302262, guid: 5b6d8fb158aba8c42b4b6fd88039bfc5,
+        type: 3}
+      propertyPath: hearts.Array.data[1]
+      value: 
+      objectReference: {fileID: 1327192418}
+    - target: {fileID: 6002115078676302262, guid: 5b6d8fb158aba8c42b4b6fd88039bfc5,
+        type: 3}
+      propertyPath: hearts.Array.data[2]
+      value: 
+      objectReference: {fileID: 1918070725}
+    - target: {fileID: 6002115078676302262, guid: 5b6d8fb158aba8c42b4b6fd88039bfc5,
+        type: 3}
+      propertyPath: hearts.Array.data[3]
+      value: 
+      objectReference: {fileID: 1759928868}
+    - target: {fileID: 6002115078676302262, guid: 5b6d8fb158aba8c42b4b6fd88039bfc5,
+        type: 3}
+      propertyPath: hearts.Array.data[4]
+      value: 
+      objectReference: {fileID: 2087648434}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5b6d8fb158aba8c42b4b6fd88039bfc5, type: 3}
 --- !u!1001 &106855202
@@ -897,7 +927,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7777778, y: 1}
+    m_SensorSize: {x: 1.7798165, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -1148,56 +1178,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.15681338, y: 4.15}
   m_EdgeRadius: 0
---- !u!1 &291424918 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3221460102720397173, guid: 5b6d8fb158aba8c42b4b6fd88039bfc5,
-    type: 3}
-  m_PrefabInstance: {fileID: 53276111}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &291424919 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 3221460102720397170, guid: 5b6d8fb158aba8c42b4b6fd88039bfc5,
-    type: 3}
-  m_PrefabInstance: {fileID: 53276111}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &291424924
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 291424918}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5b83c4037fda0e54ba74ac7f05397efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DeathUI: {fileID: 1847238606}
-  health: 5
-  numOfHearts: 3
-  animator: {fileID: 291424919}
-  waitSec: 2
-  hearts:
-  - {fileID: 974571115}
-  - {fileID: 1327192418}
-  - {fileID: 1918070725}
-  - {fileID: 1759928868}
-  - {fileID: 2087648434}
-  fullHeart: {fileID: 21300000, guid: 0ad60bce7fbfdad4bb0f56cf8b0bbf84, type: 3}
-  emptyHeart: {fileID: 21300000, guid: 7c75a1cff5c1414459c0521c41d84a3f, type: 3}
---- !u!114 &291424925
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 291424918}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4745de029af16704d9494fadf70d9141, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  staticPostion: 0
 --- !u!1 &310745838
 GameObject:
   m_ObjectHideFlags: 0

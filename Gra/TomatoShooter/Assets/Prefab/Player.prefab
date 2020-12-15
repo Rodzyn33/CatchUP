@@ -14,6 +14,8 @@ GameObject:
   - component: {fileID: 3221460102720397171}
   - component: {fileID: 3221460102720397174}
   - component: {fileID: 3221460102720397170}
+  - component: {fileID: 6444733077035274163}
+  - component: {fileID: 6002115078676302262}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -170,3 +172,41 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &6444733077035274163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3221460102720397173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4745de029af16704d9494fadf70d9141, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  staticPostion: 0
+--- !u!114 &6002115078676302262
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3221460102720397173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b83c4037fda0e54ba74ac7f05397efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DeathUI: {fileID: 0}
+  health: 5
+  numOfHearts: 3
+  animator: {fileID: 3221460102720397170}
+  waitSec: 2
+  hearts:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  fullHeart: {fileID: 21300000, guid: 0ad60bce7fbfdad4bb0f56cf8b0bbf84, type: 3}
+  emptyHeart: {fileID: 21300000, guid: 7c75a1cff5c1414459c0521c41d84a3f, type: 3}

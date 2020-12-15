@@ -125,6 +125,12 @@ public class PlayerScript : MonoBehaviour
             GetComponent<hpScript>().numOfHearts +=1;
             Destroy(col.gameObject);
         }
+        if (col.gameObject.tag.Equals("spikes"))
+        {
+            GetComponent<hpScript>().health -= 1;
+
+        }
+
     }  
     }
 
