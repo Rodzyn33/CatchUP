@@ -12,8 +12,9 @@ GameObject:
   - component: {fileID: 9179153565710069030}
   - component: {fileID: 9179153565710069031}
   - component: {fileID: 9179153565710069024}
+  - component: {fileID: 403615785591147210}
   m_Layer: 0
-  m_Name: HP1
+  m_Name: HPcol
   m_TagString: hpTag
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 9179153565710069025}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 3.18, y: -6.64, z: 0}
-  m_LocalScale: {x: 7, y: 7, z: 1}
+  m_LocalScale: {x: 8, y: 8, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -108,16 +109,16 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.0036127528, y: 0.06685434}
-      - {x: -0.040231682, y: 0.07790688}
-      - {x: -0.06676999, y: 0.06343418}
+    - - {x: 0.001794528, y: 0.018315205}
+      - {x: -0.038966827, y: 0.019999793}
+      - {x: -0.07230376, y: 0.019677784}
       - {x: -0.07569194, y: 0.018357525}
       - {x: -0.050696973, y: -0.024883175}
       - {x: -0.00023163948, y: -0.07372072}
       - {x: 0.041162357, y: -0.03185938}
       - {x: 0.075813845, y: 0.020699076}
-      - {x: 0.06292237, y: 0.06600575}
-      - {x: 0.03395246, y: 0.07790678}
+      - {x: 0.06288285, y: 0.018968597}
+      - {x: 0.033675753, y: 0.018853413}
 --- !u!95 &9179153565710069024
 Animator:
   serializedVersion: 3
@@ -137,3 +138,16 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &403615785591147210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9179153565710069025}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4745de029af16704d9494fadf70d9141, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  staticPostion: 1

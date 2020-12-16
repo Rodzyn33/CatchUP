@@ -9,7 +9,7 @@ public class bossScript : MonoBehaviour
     public Slider healthbar;
     public GameObject BossBullet;
     public GameObject HPboost;
-
+    public Animator animator;
     private GameObject target;
     public float Speed;
     public GameObject boss1;
@@ -75,11 +75,14 @@ public class bossScript : MonoBehaviour
     }
 
     void CheckBossFire()
-    {
+    {   
+        
         if (Time.time > nextFire)
         {
+            animator.SetBool("isShooting", true);
             Instantiate(BossBullet, transform.position, Quaternion.identity);
             nextFire = Time.time + fireRate;
+            
         }
     }
     void Flip()

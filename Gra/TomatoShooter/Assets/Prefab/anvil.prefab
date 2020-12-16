@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 961993836743224780}
   - component: {fileID: 1988851350267136536}
   - component: {fileID: 2767890742712214122}
+  - component: {fileID: 1693860187710197771}
   m_Layer: 0
   m_Name: anvil
   m_TagString: Untagged
@@ -108,3 +109,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.12547746, y: 0.08232466}
   m_EdgeRadius: 0
+--- !u!114 &1693860187710197771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1753618603550507980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4745de029af16704d9494fadf70d9141, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  staticPostion: 0

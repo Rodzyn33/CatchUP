@@ -5,6 +5,8 @@ using UnityEngine;
 public class BulletControler : MonoBehaviour
 {
     public float lifeTime;
+    public GameObject shotParticles;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -28,7 +30,19 @@ public class BulletControler : MonoBehaviour
         if (!(collision.name == "Player"))
         {
             if (!(collision.name == "CameraBox"))
-                Destroy(this.gameObject);
+            {
+                if (!(collision.gameObject.tag.Equals("spikes")))
+                {
+                    if(!(collision.gameObject.tag.Equals("hpTag")))
+                    {
+                        if (!(collision.gameObject.tag.Equals("hpboost")))
+                            Instantiate(shotParticles, transform.position, Quaternion.identity);
+                            Destroy(this.gameObject);
+                    }
+                }
+                    
+            }
+                
         }
 
         

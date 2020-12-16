@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class slimeScript : MonoBehaviour
 {
+    public GameObject particles;
     public GameObject boss1;
     private GameObject target;
     private float Speed;
@@ -61,11 +62,19 @@ public class slimeScript : MonoBehaviour
         ad = gameObject.GetComponent<Statistics>().attackDamage;
         if (hp <= 0)
         {
+            Instantiate(particles, transform.position, Quaternion.identity);
             Destroy(this.gameObject);
+            scoreScript.scoreValue += scoreScript.Adder;
         }
     }
 
-  
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag.Equals("spikes"))
+        {
+            Destroy(gameObject);
+        }
+    }
     void Flip()
     {
         obrot = !obrot;

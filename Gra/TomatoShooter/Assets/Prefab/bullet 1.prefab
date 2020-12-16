@@ -97,6 +97,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifeTime: 3
+  shotParticles: {fileID: 6103268551206762116, guid: d5b9425631ba53f448f4d454bce443a3,
+    type: 3}
 --- !u!58 &9062753879266919067
 CircleCollider2D:
   m_ObjectHideFlags: 0

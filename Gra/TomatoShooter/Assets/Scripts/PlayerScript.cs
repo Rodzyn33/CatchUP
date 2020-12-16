@@ -10,6 +10,10 @@ public class PlayerScript : MonoBehaviour
     private Vector2 moveDirection;
     bool obrot = true;
 
+    public itemsSpawner hpSpawn;
+    public ParticleSystem dust;
+    public ParticleSystem blood;
+
     public GameObject bulletPrefab;
     public float fireDelay;
     public float bulletSpeed;
@@ -37,10 +41,12 @@ public class PlayerScript : MonoBehaviour
     void FixedUpdate()
     {
         Move();
+
     }
 
     void ProcessInputs()
     {
+        
         float moveX = Input.GetAxisRaw("Horizontal");
         float moveY = Input.GetAxisRaw("Vertical");
         float ShootH = Input.GetAxisRaw("ShootingHor");
@@ -54,12 +60,14 @@ public class PlayerScript : MonoBehaviour
 
         if (moveDirection !=Vector2.zero)
         {
+            
             animator.SetFloat("ruchX", moveDirection.x);
             animator.SetFloat("ruchY", moveDirection.y);
             animator.SetBool("moving", true);
         }
         else
         {
+            CreateDust();
             animator.SetBool("moving", false);
         }
         
@@ -68,10 +76,12 @@ public class PlayerScript : MonoBehaviour
 
         if (moveX < 0 && obrot)
         {
+            
             Flip();
         }
         else if (moveX > 0 && !obrot)
         {
+            
             Flip();
         }
     }
@@ -87,7 +97,9 @@ public class PlayerScript : MonoBehaviour
     
     void Move()
     {
+        
         rb.velocity = new Vector2(moveDirection.x * moveSpeed, moveDirection.y * moveSpeed);
+        CreateDust();
     }
 
     void Flip()
@@ -118,6 +130,9 @@ public class PlayerScript : MonoBehaviour
         {
             Destroy(col.gameObject);
             GetComponent<hpScript>().health += 1;
+            GameObject spawn = GameObject.FindGameObjectWithTag("spawner");
+            hpSpawn = spawn.GetComponent<itemsSpawner>();
+            hpSpawn.onMap = false;
         }
         if (col.gameObject.tag.Equals("hpboost"))
         {
@@ -127,12 +142,21 @@ public class PlayerScript : MonoBehaviour
         }
         if (col.gameObject.tag.Equals("spikes"))
         {
+            Instantiate(blood, transform.position, Quaternion.identity);
             GetComponent<hpScript>().health -= 1;
 
         }
 
     }  
+        void CreateDust()
+    {
+        dust.Play();
     }
+    void CreateBlood()
+    {
+        blood.Play();
+    }
+}
 
     
 
