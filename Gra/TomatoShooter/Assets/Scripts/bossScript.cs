@@ -21,9 +21,10 @@ public class bossScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        fireRate = 1f;
+        fireRate = 1.5f;
         nextFire = Time.time;
         target = GameObject.Find("Player");
+        animator.SetBool("isShooting", false);
     }
 
     // Update is called once per frame
@@ -58,6 +59,7 @@ public class bossScript : MonoBehaviour
             Flip();
         }
     }
+
     private void OnTriggerEnter2D(Collider2D col)
     {
         if (col.gameObject.tag.Equals("bullet"))
@@ -75,15 +77,17 @@ public class bossScript : MonoBehaviour
     }
 
     void CheckBossFire()
-    {   
+    {
         
         if (Time.time > nextFire)
         {
             animator.SetBool("isShooting", true);
             Instantiate(BossBullet, transform.position, Quaternion.identity);
             nextFire = Time.time + fireRate;
+
             
         }
+        
     }
     void Flip()
     {

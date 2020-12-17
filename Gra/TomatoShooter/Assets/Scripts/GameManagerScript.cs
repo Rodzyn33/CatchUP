@@ -34,9 +34,9 @@ public class GameManagerScript : MonoBehaviour
             if (wywolano == false)
             {
                 wave = wave + 1;
-                if (wave % 2 == 0)
+                if (wave % 1 == 0)
                 {
-                    Spawn2(Siur, wave / 2);
+                    Spawn2(Siur, wave / 1);
                 }
             }
            doWave(wave);
