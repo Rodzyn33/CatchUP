@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class GameManagerScript : MonoBehaviour
 {
-    [SerializeField]
-    private int wave;
+    
+    public  int wave;
 
     [SerializeField]
     private GameObject Slime;
