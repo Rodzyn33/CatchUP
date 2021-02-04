@@ -14,6 +14,8 @@ public class PlayerScript : MonoBehaviour
     public ParticleSystem dust;
     public ParticleSystem blood;
 
+    public GameObject item;
+
     public GameObject bulletPrefab;
     public float fireDelay;
     public float bulletSpeed;
@@ -110,6 +112,8 @@ public class PlayerScript : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D col)
     {
+
+    
         if (col.gameObject.tag.Equals("enemy"))
         {
             GetComponent<hpScript>().health -= 1;

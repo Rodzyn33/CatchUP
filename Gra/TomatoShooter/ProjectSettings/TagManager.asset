@@ -15,6 +15,7 @@ TagManager:
   - bossHealth
   - hpboost
   - spikes
+  - item
   layers:
   - Default
   - TransparentFX
