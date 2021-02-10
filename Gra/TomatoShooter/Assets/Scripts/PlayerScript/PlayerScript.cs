@@ -14,8 +14,6 @@ public class PlayerScript : MonoBehaviour
     public ParticleSystem dust;
     public ParticleSystem blood;
 
-    public GameObject item;
-
     public GameObject bulletPrefab;
     public float fireDelay;
     public float bulletSpeed;
